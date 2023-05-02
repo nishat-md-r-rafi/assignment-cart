@@ -7,10 +7,10 @@
   "author": "Rakibul Yeasin <ryeasin03@gmail.com>",
   "license": "MIT",
   "private": true,
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "babel src -d dist && node-git-info",
-    "start": "babel src --out-dir dist",
+    "start": "babel src --out-dir dist && nodemon dist/app.js",
     "dev": "nodemon --exec babel-node src/index.js",
     "lint": "eslint src --ext js"
   },
