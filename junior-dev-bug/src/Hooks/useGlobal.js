@@ -15,6 +15,7 @@ const useGlobal = () => {
     toggleModal,
     open,
     setMbCode,
+    setOpen,
     mbCode,
     getPayment,
     totalPrice,

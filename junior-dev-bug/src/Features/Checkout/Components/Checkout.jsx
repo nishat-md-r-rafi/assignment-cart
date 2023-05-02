@@ -9,7 +9,7 @@ export default function Checkout() {
     const { getPayment } = useGlobalCtx();
     const onSubmit = (data) => getPayment(data);
     return (
-        <form onSubmit={handleSubmit(onSubmit())}>
+        <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-12 gap-x-8 py-12">
                 <div className="col-span-7 ">
                     <Contact register={register} />
